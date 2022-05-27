@@ -14,18 +14,17 @@ function App() {
   
   return (
     <div >
-      <p style={{color: artistOfDay.huenique}}>My favorite song today is: {setArtistOfDay.name}</p>
+      <p style={{color:"green", fontSize: "20px"}}>My favorite song today is: {artistOfDay.name} by {artistOfDay.favoriteSong}</p>
       <ListComponent setArtistOfDay={setArtistOfDay} artists={artists}> </ListComponent>
-      hello world! 
     </div>
   );
 }
 
 function ListComponent({artists, setArtistOfDay}) { 
     return (
-      <ul>
+      <ol>
           {artists.map((artist) => <ArtistItemComponent setArtistOfDay={setArtistOfDay} artist={artist}></ArtistItemComponent>)}
-      </ul>
+      </ol>
     )
   }
 
