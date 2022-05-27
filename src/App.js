@@ -14,7 +14,7 @@ function App() {
   
   return (
     <div >
-      <p style={{color:"green", fontSize: "20px"}}>My favorite song today is: {artistOfDay.name} by {artistOfDay.favoriteSong}</p>
+      <p style={{color:"green", fontSize: "20px"}}>My favorite song today is: {artistOfDay.favoriteSong} by {artistOfDay.name} </p>
       <ListComponent setArtistOfDay={setArtistOfDay} artists={artists}> </ListComponent>
     </div>
   );
